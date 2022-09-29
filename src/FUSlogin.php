@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="login_fields">
-        Username: <input type="text" name="username">
-        Password: <input type="text" name="password">
+    <div id="login">
+        <form>
+            Username: <input type="text" name="username"> <br>
+            Password: <input type="text" name="password">
+        </form>
     </div>
 </body>
 </html>
