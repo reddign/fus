@@ -8,11 +8,13 @@
 </head>
 <body>
     <form>
-        Username: <input type="text" name="username"> <br>
-        Password: <input type="text" name="password"> <br>
-        Confirm Password: <input type="text" name="c_password"> <br>
+        <label for="username">Username:</label> <input type="text" name="username"> <br>
+        <label for="password">Password:</label> <input type="password" name="password"> <br>
+        <label for="password">Confirm Password:</label> <input type="password" name="c_password"> <br>
 
         <!-- find other necessary info for registration -->
+
+        <input type="submit">
     </form>
 </body>
 </html>

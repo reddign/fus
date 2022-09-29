@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="login">
-        <form>
-            Username: <input type="text" name="username"> <br>
-            Password: <input type="text" name="password">
-        </form>
-    </div>
+    <form>
+        <label for="username">Username:</label> <input type="text" name="username"> <br>
+        <label for="password">Password:</label> <input type="password" name="password"> <br>
+        <input type="submit">
+    </form>
+    Don't have an account? <a href="FUSregistration.php">Register</a> here
 </body>
 </html>
