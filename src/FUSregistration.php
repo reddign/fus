@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form>
+        Username: <input type="text" name="username"> <br>
+        Password: <input type="text" name="password"> <br>
+        Confirm Password: <input type="text" name="c_password"> <br>
+
+        <!-- find other necessary info for registration -->
+    </form>
 </body>
 </html>
