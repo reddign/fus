@@ -7,9 +7,11 @@
     <title>Home</title>
 </head>
 <body>
-    <a href="FUSlogin.php">Log in</a><br>
-    <a href="FUSeventsignup.php">Sign up</a> for an event<br>
-    See an event <a href="FUScalendar.php">calendar</a><br>
-    Check <a href="FUSpricing.php">pricing</a> options<br>
+    <div class="header">
+        <a href="FUSlogin.php">Log in</a><br>
+        <a href="FUSeventsignup.php">Sign up</a> for an event<br>
+        See an event <a href="FUScalendar.php">calendar</a><br>
+        Check <a href="FUSpricing.php">pricing</a> options<br>
+    </div>
 </body>
 </html>

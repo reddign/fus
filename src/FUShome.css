@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    position: relative;
+    background-color: blue;
+    justify-content: left;
+}
+
+.body{
+    background-color: gray;
+}
