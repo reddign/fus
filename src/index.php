@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <a href="FUShome.php"> home </a>
 </body>
 </html>
