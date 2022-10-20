@@ -22,7 +22,9 @@
 
         if(is_array($user) && isset($user["password"])) {
             if($user["password"] == $p) {
-                return $user;
+                if($user["authorized"] != 0) {
+                    return $user;
+                }
             }
         } 
 
