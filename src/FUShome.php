@@ -13,9 +13,9 @@
     </div>
     <div class="links">
         <h2><a href="FUSlogin.php">Log in</a><br></h2>
-        <h2><a href="FUSeventsignup.php">Sign up</a> for an event<br></h2>
-        <h2> See an event <a href="FUScalendar.php">calendar</a><br></h2>
-        <h2>Check <a href="FUSpricing.php">pricing</a> options<br></h2>
+        <h2><a href="FUSeventsignup.php">Sign up for an event</a><br></h2>
+        <h2><a href="FUScalendar.php">See an event calendar</a><br></h2>
+        <h2><a href="FUSpricing.php">Check pricing options</a><br></h2>
     </div>
 </body>
 </html>

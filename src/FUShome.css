@@ -2,8 +2,8 @@
     display: flex;
     position: relative;
     background-color: lightblue;
-    justify-content: left;
-    flex-direction: column;
+    justify-content: center;
+    /* flex-direction: column; */
 }
 
 h1 {
@@ -15,11 +15,10 @@ h1 {
 }
 
 h2 {
-    text-align: left;
-    font-size: 100%;
+    font-size: 150%;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-left: 10px;
+    padding-left: 60px;
 }
 
 body{
