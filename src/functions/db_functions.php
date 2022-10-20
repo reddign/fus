@@ -1,4 +1,5 @@
 <?php
+    require "config2.php";
 
     function connect() {
         global $database,$databasehost,$databaseuser,$databasepassword;
@@ -22,7 +23,7 @@
 
         if(is_array($user) && isset($user["password"])) {
             if($user["password"] == $p) {
-                if($user["authorized"] != 0) {
+                if($user["approved"] != 0) {
                     return $user;
                 }
             }
