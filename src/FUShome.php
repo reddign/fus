@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +18,13 @@
         <h2><a href="FUSeventsignup.php">Sign up for an event</a><br></h2>
         <h2><a href="FUScalendar.php">See an event calendar</a><br></h2>
         <h2><a href="FUSpricing.php">Check pricing options</a><br></h2>
+    </div>
+    <div class="login">
+        <?php
+            if(isset($_SESSION["user_id"])) {
+        ?>
+            <p>Welcome <?php echo($_SESSION["user_id"]); ?></p>
+        <?php } ?>
     </div>
 </body>
 </html>
