@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+        $db = connect();
+        
     
+    ?>
 </body>
 </html>

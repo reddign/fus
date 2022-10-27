@@ -1,5 +1,6 @@
 <?php
     require "db_functions.php";
+
     session_start();
     
     $username = isset($_POST)?$_POST["username"]:"";
@@ -10,7 +11,9 @@
 
     if ($_SESSION["loggedIn"]) {
         $_SESSION["user_id"] = $user["user_id"];
+        $_SESSION["admin"] = $user["admin"];
+        header("Location: ../FUShome.php");
     } else {
-        session_destroy();
+        echo("not successful");
     }
 ?>

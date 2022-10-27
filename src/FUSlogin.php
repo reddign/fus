@@ -10,7 +10,7 @@
     <form method="post" action="functions/login.php">
         <label for="username">Username:</label> <input type="text" name="username"> <br>
         <label for="password">Password:</label> <input type="password" name="password"> <br>
-        <input type="submit">
+        <input type="submit" value="Login">
     </form>
     Don't have an account? <a href="FUSregistration.php">Register</a> here
 </body>
