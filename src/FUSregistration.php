@@ -20,7 +20,8 @@
         <label for="state">State:</label> <input type="text" name="state"> <br>
         <label for="zip">Zip Code:</label> <input type="text" name="zip"> <br>
         <br>
-        <label for="phone">Phone Number:</label> <input type="text" name="phone"> <br>
+        <label for="email">Email:</label> <input type="email" name="email"> <br>
+        <label for="phone">Phone Number:</label> <input type="tel" name="phone"> <br>
 
         <!-- find other necessary info for registration -->
 

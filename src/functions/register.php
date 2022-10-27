@@ -14,8 +14,9 @@
     $state = isset($_POST)?$_POST["state"]:"";
     $zip = isset($_POST)?$_POST["zip"]:"";
     
+    $email = isset($_POST)?$_POST["email"]:"";
     $phone = isset($_POST)?$_POST["phone"]:"";
     
-    registerUser($username, $password, $c_password, $first_name, $last_name, $address, $city, $state, $zip, $phone);
+    registerUser($username, $password, $c_password, $first_name, $last_name, $address, $city, $state, $zip, $email, $phone);
 
 ?>

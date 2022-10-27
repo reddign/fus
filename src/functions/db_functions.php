@@ -33,12 +33,12 @@
     }
 
 
-    function registerUser($u, $p, $cp, $fn, $ln, $ad, $ct, $st, $zp, $ph) {
+    function registerUser($u, $p, $cp, $fn, $ln, $ad, $ct, $st, $zp, $em, $ph) {
         if ($p != $cp) { return false; }
 
-        $query = "INSERT INTO user_outside (username, password, approved, first_name, last_name, address, city, state, zip, phone) 
-            VALUES (:u, :p, 0, :fn, :ln, :ad, :ct, :st, :zp, :ph);";
-        $params = [":u" => $u, ":p" => $p, ":fn" => $fn, ":ln" => $ln, ":ad" => $ad, ":ct" => $ct, ":st" => $st, ":zp" => $zp, ":ph" => $ph];
+        $query = "INSERT INTO user_outside (username, password, approved, first_name, last_name, address, city, state, zip, email, phone) 
+            VALUES (:u, :p, 0, :fn, :ln, :ad, :ct, :st, :zp, :em, :ph);";
+        $params = [":u" => $u, ":p" => $p, ":fn" => $fn, ":ln" => $ln, ":ad" => $ad, ":ct" => $ct, ":st" => $st, ":zp" => $zp, ":em" => $em, ":ph" => $ph];
 
         $db = connect();
         $stmt = $db->prepare($query);
