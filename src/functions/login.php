@@ -11,9 +11,9 @@
 
     if ($_SESSION["loggedIn"]) {
         $_SESSION["user_id"] = $user["user_id"];
+        $_SESSION["admin"] = $user["admin"];
         header("Location: ../FUShome.php");
     } else {
         echo("not successful");
-        session_destroy();
     }
 ?>

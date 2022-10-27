@@ -13,19 +13,17 @@
         #TODO: PASSWORD ENCRYPTION 
         $p_encrypted = $p; 
 
-        $query = "SELECT * FROM user_outside WHERE username = :u";
-        $params = [":u" => $u];
+        $query = "SELECT * FROM user_outside WHERE username = :u AND password = :p";
+        $params = [":u" => $u, ":p" => $p];
 
         $db = connect();
         $stmt = $db->prepare($query);
         $stmt->execute($params);
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if(is_array($user) && isset($user["password"])) {
-            if($user["password"] == $p) {
-                if($user["approved"] != 0) {
-                    return $user;
-                }
+        if(is_array($user)) {
+            if($user["approved"]) {
+                return $user;
             }
         } 
 
@@ -45,5 +43,26 @@
         $stmt->execute($params);
         
         return true;
+    }
+
+
+    function isAdmin($uid) {
+
+        $query = "SELECT admin FROM user_outside WHERE user_id = :uid";
+        $params = [":uid" => $uid];
+
+        $db = connect();
+        $stmt = $db->prepare($query);
+        $stmt->execute($params);
+        
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        return $user["admin"];
+
+    }
+
+
+    function getUnauthorizedUsers() {
+
     }
 ?>
