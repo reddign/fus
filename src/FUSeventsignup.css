@@ -3,19 +3,22 @@ h1 {
     font-size: 300%;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-left: 10px;
+    padding: 20px;
+    background-color: #979da3;
 }
 .dropbtn {
-    background-color: #61b8f2;
+    background-color: #95d5ff;
     color: black;
     padding: 14px;
     font-size: 16px;
+    margin-top: 45px;
     border: none;
     cursor: pointer;
+    vertical-align: middle;
 }
   
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #5ca4d4;
+    background-color: #82abc6;
 }
   
 .dropdown {
@@ -40,11 +43,18 @@ h1 {
 }
   
 .dropdown a:hover {
-    background-color: #4c8ebb;
+    background-color: #abb1b7;
 }
   
 .show {
     display: block;
+}
+
+p{
+    background-color: #95d5ff;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
 }
 
 body{
