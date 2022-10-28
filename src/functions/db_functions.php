@@ -13,7 +13,7 @@
         #TODO: PASSWORD ENCRYPTION 
         $p_encrypted = $p; 
 
-        $query = "SELECT * FROM user_outside WHERE username = :u AND password = :p";
+        $query = "SELECT * FROM user_outside WHERE username = :u AND password = :p;";
         $params = [":u" => $u, ":p" => $p];
 
         $db = connect();
@@ -48,7 +48,7 @@
 
     function isAdmin($uid) {
 
-        $query = "SELECT admin FROM user_outside WHERE user_id = :uid";
+        $query = "SELECT admin FROM user_outside WHERE user_id = :uid;";
         $params = [":uid" => $uid];
 
         $db = connect();
@@ -63,6 +63,28 @@
 
 
     function getUnauthorizedUsers() {
+        $query = "SELECT * FROM user_outside WHERE approved = 0;";
 
+        $db = connect();
+        $stmt = $db->prepare($query);
+        $stmt->execute();
+        
+        $users = $stmt->fetchAll();
+
+        return $users;
+    }
+
+
+    function approveUsers($uids) {
+        $query = "UPDATE user_outside SET approved = 1 WHERE user_id = :uid;";
+
+        $db = connect();
+
+        foreach($uids as $uid) {
+            $params = [":uid" => $uid];
+
+            $stmt = $db->prepare($query);
+            $stmt->execute($params);
+        }
     }
 ?>
