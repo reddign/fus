@@ -1,3 +1,9 @@
+<?php
+    require "functions/db_functions.php";
+
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +14,20 @@
 </head>
 <body>
     
+<?php include "FUSnavbar.php"?>
+    <form method="post" action="functions/approve_events.php">
+    <?php
+    /*
+        $users = getUnapprovedRequests();
+        foreach($users as $u) { 
+            echo "<input type='checkbox' name='"."approve_".$u["username"]."' value=".$u["user_id"]."> ";
+            echo "<label for='"."approve_".$u["username"]."'>";
+            echo $u["last_name"].", ".$u["first_name"];
+            echo "</label><br>";
+        }
+        */
+    ?><br>
+    <input type="submit" id="approve" value="Approve"></input>
+    </form>
 </body>
 </html>
