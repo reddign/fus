@@ -36,10 +36,15 @@ body {
     background-color: var(--color1);
     justify-content: left;
     padding: 7px;
+    background-color: lightgray
 }
 
 #navbar #links a {
     color: var(--textcolor1);
+    display: block;
+    padding: 5px 16px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
     margin-left: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -50,3 +55,6 @@ body {
     height: 20px;
 }
 
+#navbar #links a:hover {
+    background-color: rgb(153, 147, 147);
+}

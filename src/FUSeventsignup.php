@@ -17,7 +17,7 @@
 
     <script>
         $(function(){
-            $("#nav-placeholder").load("nav.php");
+            $("#nav-placeholder").load("FUSnavbar.php");
         });
         
     </script>
