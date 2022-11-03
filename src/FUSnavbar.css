@@ -34,7 +34,7 @@ body {
     display: flex;
     position: relative;
     background-color: var(--color1);
-    justify-content: space-around;
+    justify-content: left;
     padding: 7px;
     background-color: lightgray
 }
@@ -45,6 +45,14 @@ body {
     padding: 5px 16px;
     border-right: 1px solid gray;
     border-left: 1px solid gray;
+    margin-left: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#navbar .verticalLine {
+    border-right: 1px solid var(--textcolor1);
+    margin-left: 25px;
+    height: 20px;
 }
 
 #navbar #links a:hover {
