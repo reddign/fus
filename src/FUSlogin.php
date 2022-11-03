@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+
+    <?php include "FUSnavbar.php"?>
+
     <form method="post" action="functions/login.php">
         <label for="username">Username:</label> <input type="text" name="username"> <br>
         <label for="password">Password:</label> <input type="password" name="password"> <br>
