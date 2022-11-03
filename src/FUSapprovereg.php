@@ -13,6 +13,7 @@
     <title>Document</title>
 </head>
 <body>
+    <?php include "FUSnavbar.php"?>
     <form method="post" action="functions/approve_users.php">
     <?php
         $users = getUnauthorizedUsers();

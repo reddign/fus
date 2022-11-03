@@ -27,6 +27,7 @@
             <a href="FUScalendar.php">Calendar</a>
             <a href="FUSpricing.php">Pricing</a>
             <?php if(isset($_SESSION["user_id"]) && isAdmin($_SESSION["user_id"])) { ?>
+                <div class="verticalLine"></div>
                 <a href="FUSapprovereg.php">Approve Accounts</a>
                 <a href="FUSreqapproval.php">Approve Events</a>
             <?php } ?>
