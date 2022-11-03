@@ -1,8 +1,25 @@
 
-#links {
+:root {
+    --color1: lightblue;
+    --color2: lightgrey;
+}
+
+body {
+    margin: 0%;
+}
+
+#navbar {
+    background-color: var(--color2);
+}
+
+#navbar #header {
+    margin-top: 0%;
+}
+
+#navbar #links {
     display: flex;
     position: relative;
-    background-color: lightblue;
+    background-color: var(--color1);
     justify-content: space-around;
     /* flex-direction: column; */
 }

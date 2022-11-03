@@ -1,5 +1,9 @@
 <?php
     require_once "functions/db_functions.php";
+
+    if (session_status() != PHP_SESSION_ACTIVE) {
+        session_start();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -12,18 +16,20 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="banner">
-        <h1 id="header">Facility Use System</h1>
-    </div>
-    <div id="links">
-        <a href="FUSlogin.php">Log in</a>
-        <a href="FUSeventsignup.php">Event Signup</a>
-        <a href="FUScalendar.php">Calendar</a>
-        <a href="FUSpricing.php">Pricing</a>
-        <?php if(isset($_SESSION["user_id"]) && isAdmin($_SESSION["user_id"])) { ?>
-            <a href="FUSapprovereg.php">Approve Accounts</a>
-            <a href="FUSreqapproval.php">Approve Events</a>
-        <?php } ?>
+    <div id="navbar">
+        <div id="banner">
+            <h1 id="header">Facility Use System</h1>
+        </div>
+        <div id="links">
+            <a href="FUSlogin.php">Log in</a>
+            <a href="FUSeventsignup.php">Event Signup</a>
+            <a href="FUScalendar.php">Calendar</a>
+            <a href="FUSpricing.php">Pricing</a>
+            <?php if(isset($_SESSION["user_id"]) && isAdmin($_SESSION["user_id"])) { ?>
+                <a href="FUSapprovereg.php">Approve Accounts</a>
+                <a href="FUSreqapproval.php">Approve Events</a>
+            <?php } ?>
+        </div>
     </div>
 </body>
 </html>
