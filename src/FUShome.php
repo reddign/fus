@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="FUShome.css">
 </head>
 <body>
+    <?php include "FUSnavbar.php"?>
     <div class="header">
         <h1>Facility Use System</h1>
     </div>
