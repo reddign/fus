@@ -36,9 +36,17 @@ body {
     background-color: var(--color1);
     justify-content: space-around;
     padding: 7px;
+    background-color: lightgray
 }
 
 #navbar #links a {
     color: var(--textcolor1);
+    display: block;
+    padding: 5px 16px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
 }
 
+#navbar #links a:hover {
+    background-color: rgb(153, 147, 147);
+}

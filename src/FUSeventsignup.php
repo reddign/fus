@@ -6,11 +6,21 @@
     <title>Event Sign Up</title>
     <link rel="stylesheet" href="FUSeventsignup.css">
     <script src="FUSeventsignup.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <div class="header">
         <h1>Event Sign Up</h1>
     </div>
+
+    <div id="nav-placeholder"></div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("FUSnavbar.php");
+        });
+        
+    </script>
 
     <form>
         <!-- todo: add organization dropdown selector -->
