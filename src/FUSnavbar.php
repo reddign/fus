@@ -21,6 +21,7 @@
             <h1 id="header">Facility Use System</h1>
         </div>
         <div id="links">
+            <a href="FUShome.php">Home</a>
             <a href="FUSlogin.php">Log in</a>
             <a href="FUSeventsignup.php">Event Signup</a>
             <a href="FUScalendar.php">Calendar</a>
