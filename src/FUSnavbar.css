@@ -38,7 +38,7 @@ body {
     padding: 7px;
 }
 
-#links a {
+#navbar #links a {
     color: var(--textcolor1);
 }
 
