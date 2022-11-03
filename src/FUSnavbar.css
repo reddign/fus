@@ -1,7 +1,11 @@
 
 :root {
-    --color1: lightblue;
-    --color2: lightgrey;
+    --color1: lightgrey;
+    --color2: darkblue;
+
+    --textcolor1: black;
+    --textcolor2: white;
+    --textcolorbanner: white;
 }
 
 body {
@@ -12,8 +16,18 @@ body {
     background-color: var(--color2);
 }
 
+#navbar #banner {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
 #navbar #header {
     margin-top: 0%;
+    text-align: left;
+    color: var(--textcolorbanner);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 10px;
 }
 
 #navbar #links {
@@ -21,6 +35,10 @@ body {
     position: relative;
     background-color: var(--color1);
     justify-content: space-around;
-    /* flex-direction: column; */
+    padding: 7px;
+}
+
+#links a {
+    color: var(--textcolor1);
 }
 
