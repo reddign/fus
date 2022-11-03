@@ -9,11 +9,11 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
+    <div id="nav-placeholder"></div>
+
     <div class="header">
         <h1>Event Sign Up</h1>
     </div>
-
-    <div id="nav-placeholder"></div>
 
     <script>
         $(function(){

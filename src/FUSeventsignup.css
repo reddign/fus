@@ -1,14 +1,6 @@
-h1 {
-    text-align: center;
-    font-size: 300%;
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 20px;
-    background-color: #979da3;
-}
 .dropbtn {
-    background-color: #95d5ff;
-    color: black;
+    background-color: darkblue;
+    color: white;
     padding: 14px;
     font-size: 16px;
     margin-bottom: 45px;
@@ -18,7 +10,7 @@ h1 {
 }
   
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #82abc6;
+    background-color: rgb(35, 35, 195);
 }
   
 .dropdown {
@@ -51,8 +43,8 @@ h1 {
 }
 
 p{
-    background-color: #95d5ff;
-    color: black;
+    background-color: darkblue;
+    color: white;
     padding: 5px;
     font-size: 16px;
 }
