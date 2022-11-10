@@ -168,19 +168,21 @@
     function checkConflict($event_id) {
 
         $event = getEvent($event_id);
-        $request = getRequest($event["request_id"]);
 
         $query = "  SELECT e.event_id
-                    FROM event e
-                        JOIN request r ON (e.request_id = r.request_id)
-                    WHERE r.loc IN (
-                            SELECT loc_2
-                            FROM location_dependency
-                            WHERE loc_1 = :loc
-                        ) AND ((e.start_date BETWEEN :start AND :end)
-                            OR (e.end_date BETWEEN :start AND :end)
-                            OR (:start BETWEEN e.start_date AND e.end_date));";
-        $params = [":loc" => $request["loc_id"], ":start" => $event["start_date"], ":end" => $event["end_date"]];
+                    FROM (
+                        SELECT *
+                        FROM event
+                        WHERE event.approved
+                    ) e
+                    WHERE e.loc_id IN (
+                        SELECT loc_2
+                        FROM location_dependency
+                        WHERE loc_1 = :loc
+                    ) AND ((e.start_time BETWEEN :start AND :end)
+                        OR (e.end_time BETWEEN :start AND :end)
+                        OR (:start BETWEEN e.start_time AND e.end_time));";
+        $params = [":loc" => $event["loc_id"], ":start" => $event["start_date"], ":end" => $event["end_date"]];
 
         $db = connect();
         $stmt = $db->prepare($query);
