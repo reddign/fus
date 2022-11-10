@@ -39,7 +39,7 @@
 
         <!-- todo: add dropdown menus for location and area -->
         <div class="dropdown">
-            <button onclick="Function2()" type="button" class="dropbtn">Location</button>
+            <button onclick="Function2()" type="button" class="dropbtn drop">Location</button>
             <div id="Dropdown2" class="dropdown-content">
                 <a href="">Faculty</a>
                 <a href="">Student</a>
@@ -49,7 +49,7 @@
         </div>
         <br>
         <div class="dropdown">
-            <button onclick="Function3()" type="button" class="dropbtn">Area</button>
+            <button onclick="Function3()" type="button" class="dropbtn drop">Area</button>
             <div id="Dropdown3" class="dropdown-content">
                 <a href="">Faculty</a>
                 <a href="">Student</a>
@@ -59,6 +59,20 @@
         </div>
         <!-- todo: add date/time selectors (link to calendar?) -->
         <p>Select date and time: <br><input type="datetime-local"/></p> 
+
+        Repeating Event<input type="checkbox" name="Repeat" id="check"><br>
+        <div id="radio">
+        How often does this event repeat: <br>
+        Daily<input type="radio" name="repeat">
+        Weekly<input type="radio" name="repeat">
+        Monthly<input type="radio" name="repeat"> 
+        Biweekly<input type="radio" name="repeat">
+        Other<input type="radio" name="repeat"><br>
+
+        <p>Select end date: <br><input type="date"/></p>
+        </div>
+
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
