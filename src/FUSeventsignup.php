@@ -64,8 +64,19 @@
             Daily<input type="radio" name="repeat">
             Weekly<input type="radio" name="repeat">
             Biweekly<input type="radio" name="repeat">
-            Monthly<input type="radio" name="repeat"> 
-            <p>Select end date: <br><input type="date"/></p>
+            Monthly<input type="radio" name="repeat">
+            Other<input type="checkbox" name="repeat" id="other"> 
+            <div id = otherDates>
+                <p>Select date and start time: <br><input type="datetime-local"/><br>
+                Select end time: <br><input type="time"/></p>
+
+                <button type="button" id="btn">Add another Date</button>
+                <hr>
+            </div>
+            
+            <div id = endDate>
+                <p>Select end date: <br><input type="date"/></p>
+            </div>
         </div>
 
         <input type="submit" value="Submit">
