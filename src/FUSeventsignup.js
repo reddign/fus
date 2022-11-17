@@ -1,4 +1,6 @@
 
+var otherDates = 2;
+
 window.addEventListener('load', init);
 
 function Function() {
@@ -58,6 +60,6 @@ function open2() {
 }
 
 function add(){
-    document.getElementById("otherDates").insertAdjacentHTML('afterbegin', '<p>Select date and start time: <br><input type="datetime-local"/><br>'
-    +'Select end time: <br><input type="time"/></p>')
+    document.getElementById("otherDates").insertAdjacentHTML('afterbegin', '<p>Select date and start time: <br><input type="datetime-local" name="datetime_start_' + (++otherDates) + '"><br>'
+    +'Select end time: <br><input type="time" name="datetime_end_' + (otherDates) + '"/></p>')
 }

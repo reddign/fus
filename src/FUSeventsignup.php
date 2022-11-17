@@ -55,8 +55,8 @@
         <br>
         <br>
         <!-- todo: add date/time selectors (link to calendar?) -->
-        <p>Select date and start time: <br><input type="datetime-local"/></p>
-        <p>Select end time: <br><input type="time"/></p> 
+        <p>Select date and start time: <br><input type="datetime-local" name="datetime_start_1"/></p>
+        <p>Select end time: <br><input type="time" name="datetime_end_1"/></p> 
 
         Repeating Event<input type="checkbox" name="Repeat" id="check"><br>
         <div id="radio">
@@ -67,15 +67,15 @@
             Monthly<input type="radio" name="repeat">
             Other<input type="checkbox" name="repeat" id="other"> 
             <div id = otherDates>
-                <p>Select date and start time: <br><input type="datetime-local"/><br>
-                Select end time: <br><input type="time"/></p>
+                <p>Select date and start time: <br><input type="datetime-local" name="datetime_start_2"/><br>
+                Select end time: <br><input type="time" name="datetime_end_2"/></p>
 
                 <button type="button" id="btn">Add another Date</button>
                 <hr>
             </div>
             
             <div id = endDate>
-                <p>Select end date: <br><input type="date"/></p>
+                <p>Select end date: <br><input type="date" name="end_date"/></p>
             </div>
         </div>
 
