@@ -73,7 +73,10 @@
                 <button type="button" id="btn">Add another Date</button>
                 <hr>
             </div>
-            <p>Select end date: <br><input type="date"/></p>
+            
+            <div id = endDate>
+                <p>Select end date: <br><input type="date"/></p>
+            </div>
         </div>
 
         <input type="submit" value="Submit">

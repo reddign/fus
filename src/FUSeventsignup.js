@@ -49,9 +49,11 @@ function open() {
 function open2() {
     if (this.checked) {
         document.getElementById("otherDates").style.display = "block";
+        document.getElementById("endDate").style.display = "none";
     } 
     else {
         document.getElementById("otherDates").style.display = "none";
+        document.getElementById("endDate").style.display = "block";
     }
 }
 
