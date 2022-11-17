@@ -27,6 +27,15 @@ window.onclick = function(event) {
 function init() {
     document.getElementById("radio").style.display ="none";
     document.getElementById('check').addEventListener('change', open);
+
+    document.getElementById("otherDates").style.display ="none"
+    document.getElementById('other').addEventListener('change', open2);
+
+    document.getElementById('btn').addEventListener('click', add);
+}
+
+function other(){
+    alert('hello');
 }
 
 function open() {
@@ -36,4 +45,17 @@ function open() {
     else {
         document.getElementById("radio").style.display = "none";
     }
+}
+function open2() {
+    if (this.checked) {
+        document.getElementById("otherDates").style.display = "block";
+    } 
+    else {
+        document.getElementById("otherDates").style.display = "none";
+    }
+}
+
+function add(){
+    document.getElementById("otherDates").insertAdjacentHTML('afterbegin', '<p>Select date and start time: <br><input type="datetime-local"/><br>'
+    +'Select end time: <br><input type="time"/></p>')
 }
