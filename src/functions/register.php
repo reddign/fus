@@ -19,4 +19,6 @@
     
     registerUser($username, $password, $c_password, $first_name, $last_name, $address, $city, $state, $zip, $email, $phone);
 
+    header("Location: ../FUSregistermsg.php");
+
 ?>
