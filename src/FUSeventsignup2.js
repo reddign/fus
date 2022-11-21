@@ -31,7 +31,7 @@ function init() {
     document.getElementById('check').addEventListener('change', open);
 
     document.getElementById("otherDates").style.display ="none";
-    document.getElementById('other').addEventListener('change', open2);
+    document.querySelectorAll('#radio > input').forEach(rb => { rb.addEventListener('change', open2); });
 
     document.getElementById('btn').addEventListener('click', add);
 }
@@ -49,7 +49,7 @@ function open() {
     }
 }
 function open2() {
-    if (this.checked) {
+    if (this.value == "other") {
         document.getElementById("otherDates").style.display = "block";
         document.getElementById("endDate").style.display = "none";
     } 
